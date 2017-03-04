@@ -1,0 +1,4 @@
+name: SpigotPluginAPI
+version: 0.0.1-SNAPSHOT
+main: net.yeahsaba.tanikyan.SpigotPluginAPI.Main
+author: Tanikyan
