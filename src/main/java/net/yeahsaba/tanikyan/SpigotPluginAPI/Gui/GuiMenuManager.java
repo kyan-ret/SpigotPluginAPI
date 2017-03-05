@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -15,7 +16,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.md_5.bungee.api.ChatColor;
 import net.yeahsaba.tanikyan.SpigotPluginAPI.nms.NBT.NBTManager;
 
 public class GuiMenuManager {
@@ -143,7 +143,7 @@ public class GuiMenuManager {
 			if(ft != null && ft.equalsIgnoreCase("yml")){
 				//ymlだった場合ロード
 				FileConfiguration menu_cf = YamlConfiguration.loadConfiguration(file);
-				if(menu_cf.getConfigurationSection("Meu") == null){
+				if(menu_cf.getConfigurationSection("Menu") == null){
 					//設定が存在しない
 					return false;
 				}
